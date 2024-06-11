@@ -1,0 +1,47 @@
+## Docker commands used to build the application 
+# TODO: insert the docker build command
+docker build -t techtrends .
+
+## Docker commands used to run the application
+# TODO: insert the docker run command
+docker run -d -p 8111:3111 --name techtrends_container techtrends
+
+## Docker commands used to get the application logs
+# TODO: insert the docker logs command
+docker logs techtrends_container
+
+## Logs from the container running the TechTrends application
+# TODO: paste logs from the Docker container 
+
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://172.17.0.7:3111/ (Press CTRL+C to quit)
+INFO:app:Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:42:50] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:42:50] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:Article "KubeCon + CloudNativeCon 2021" retrieved!
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:42:52] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:42:52] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:Article "Kubernetes v1.20 Release Notes" retrieved!
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:42:54] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:42:54] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:45:18] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:45:18] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:Article "KubeCon + CloudNativeCon 2021" retrieved!
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:45:20] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:45:20] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:Article "Kubernetes v1.20 Release Notes" retrieved!
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:45:21] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:45:22] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:Article "CNCF Cloud Native Interactive Landscape" retrieved!
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:45:24] "GET /4 HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:45:24] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:Article "CNCF Cloud Native Interactive Landscape" retrieved!
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:45:25] "GET /4 HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.56 - - [07/Jun/2024 03:45:25] "GET /static/css/main.css HTTP/1.1" 304 -
